@@ -1,7 +1,7 @@
 {
     "project": {
         "title": "Intro-viz",
-        "creator": "Mads Holten Rasmussen"
+        "creator": "Gustav Josephsen and Mathias Steuch"
     },
     "tabs": [
         {
