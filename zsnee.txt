@@ -19,7 +19,7 @@
   "title": "Gustav and Mathias' Graph 1",
   "query": "CONSTRUCT\nWHERE {\n\t?Subject ?Predicate ?Object\n}",
   "triples": "<DTU><contains_building><DTU116>.\n<DTU><is_a><University>.\n<DTU116> <is_a> <Building> .\n<DTU116> <contains_space> <Auditorium81> .\n<DTU116> <contains_space> <Auditorium82> .\n<Auditorium81> <is_a> <Room> .\n<Auditorium82> <is_a> <Room> .\n<Wood> <is_a> <Material> . <Chair> <is_made_of> <Wood>. <Table> <is_made_of> <Wood>. <Table> <is_made_of> <Steel>.<Steel> <is_a> <Material>.\n<Lamp> <is_made_of> <Steel>.\n<Auditorium81> <contains_element> <Chair1> .\n<Auditorium81> <contains_element> <Chair2> .\n<Auditorium81> <contains_element> <Chair3> .\n<Auditorium81> <contains_element> <Table1> .\n<Auditorium81> <contains_element> <Table2> .\n<Auditorium81> <contains_element> <Table3> .\n<Auditorium81> <contains_element> <Blackboard_lamp> .\n<Auditorium81> <contains_element> <Overlight> .\n\n<Blackboard_lamp> <is_a> <Lamp>.\n<Overlight> <is_a> <Lamp>.\n\n<Chair1> <is_a> <Chair> .\n<Chair2> <is_a> <Chair> .\n<Chair3> <is_a> <Chair> .\n<Table1> <is_a> <Table> .\n<Table2> <is_a> <Table> .\n<Table3> <is_a> <Table> .",
-  "description": "This is a decription of our graph. The graph shows different elements, properties and connections from within a building at DTU."
+  "description": "This is a description of our graph. The graph shows different elements, properties and connections from within a building at DTU."
 },
 
 
@@ -27,7 +27,14 @@
   "title": "Gustav and Mathias' Graph 2",
   "query": "SELECT DISTINCT ?Predicate\nWHERE {\n\t?Subject ?Predicate ?Object\n}",
   "triples": "<DTU><contains_building><DTU116>.\n<DTU><is_a><University>.\n<DTU116> <is_a> <Building> .\n<DTU116> <contains_space> <Auditorium81> .\n<DTU116> <contains_space> <Auditorium82> .\n<Auditorium81> <is_a> <Room> .\n<Auditorium82> <is_a> <Room> .\n<Wood> <is_a> <Material> . <Chair> <is_made_of> <Wood>. <Table> <is_made_of> <Wood>. <Table> <is_made_of> <Steel>.<Steel> <is_a> <Material>.\n<Lamp> <is_made_of> <Steel>.\n<Auditorium81> <contains_element> <Chair1> .\n<Auditorium81> <contains_element> <Chair2> .\n<Auditorium81> <contains_element> <Chair3> .\n<Auditorium81> <contains_element> <Table1> .\n<Auditorium81> <contains_element> <Table2> .\n<Auditorium81> <contains_element> <Table3> .\n<Auditorium81> <contains_element> <Blackboard_lamp> .\n<Auditorium81> <contains_element> <Overlight> .\n\n<Blackboard_lamp> <is_a> <Lamp>.\n<Overlight> <is_a> <Lamp>.\n\n<Chair1> <is_a> <Chair> .\n<Chair2> <is_a> <Chair> .\n<Chair3> <is_a> <Chair> .\n<Table1> <is_a> <Table> .\n<Table2> <is_a> <Table> .\n<Table3> <is_a> <Table> .",
-  "description": "This is a decription of our graph. The graph shows different elements, properties and connections from within a building at DTU."
+  "description": "This is a description of our graph 2.3"
+},
+
+{
+  "title": "Gustav and Mathias' Graph 3",
+  "query": "CONSTRUCT \nWHERE {\n \n\t<Table1> <is_made_of> ?Material\n}",
+  "triples": "<DTU><contains_building><DTU116>.\n<DTU><is_a><University>.\n<DTU116> <is_a> <Building> .\n<DTU116> <contains_space> <Auditorium81> .\n<DTU116> <contains_space> <Auditorium82> .\n<Auditorium81> <is_a> <Room> .\n<Auditorium82> <is_a> <Room> .\n<Plastic> <is_a> <Material>.\n<Wood> <is_a> <Material> . \n<Chair> <is_made_of> <Wood>. \n<Table1> <is_made_of> <Wood>.\n<Table1> <is_made_of> <Plastic>.\n<Table2> <is_made_of> <Steel>.\n<Steel> <is_a> <Material>.\n<Table3> <is_made_of> <Steel>.\n<Lamp> <is_made_of> <Steel>.\n<Auditorium81> <contains_element> <Chair1> .\n<Auditorium81> <contains_element> <Chair2> .\n<Auditorium81> <contains_element> <Chair3> .\n<Auditorium81> <contains_element> <Table1> .\n<Auditorium81> <contains_element> <Table2> .\n<Auditorium81> <contains_element> <Table3> .\n<Auditorium81> <contains_element> <Blackboard_lamp> .\n<Auditorium81> <contains_element> <Overlight> .\n\n<Blackboard_lamp> <is_a> <Lamp>.\n<Overlight> <is_a> <Lamp>.\n\n<Chair1> <is_a> <Chair> .\n<Chair2> <is_a> <Chair> .\n<Chair3> <is_a> <Chair> .\n<Table1> <is_a> <Table> .\n<Table2> <is_a> <Table> .\n<Table3> <is_a> <Table> .",
+  "description": "This is a description of our graph for Task 2.4."
 }
     ]
 }
