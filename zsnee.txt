@@ -47,6 +47,12 @@
   "query": "CONSTRUCT\nWHERE {\n\t<Auditorium81> a ?Object\n}",
   "triples": "@prefix bo:         <http://www.bim.byg.dtu.dk/ontology#> .\n\n\n<DTU>bo:hasBuilding<DTU116>.\n<DTU> a <University>.\n<DTU116> a <Building> .\n<DTU116> bo:hasSpace <Auditorium81> .\n<DTU116> bo:hasSpace <Auditorium82> .\n<Auditorium81> a bo:hasRoom .\n<Auditorium82> a bo:hasRoom .\n<Wood> a <Material> . bo:Chair bo:madeOf <Wood>. bo:Table bo:madeOf <Wood>. bo:Table bo:madeOf <Steel>.<Steel> a <Material>.\n<Lamp> bo:madeOf <Steel>.\n<Auditorium81> bo:containsElement <Chair1> .\n<Auditorium81> bo:containsElement <Chair2> .\n<Auditorium81> bo:containsElement <Chair3> .\n<Auditorium81> bo:containsElement <Table1> .\n<Auditorium81> bo:containsElement <Table2> .\n<Auditorium81> bo:containsElement <Table3> .\n<Auditorium81> bo:containsElement <Blackboard_lamp> .\n<Auditorium81> bo:containsElement <Overlight> .\n\n<Blackboard_lamp> a <Lamp>.\n<Overlight> a <Lamp>.\n\n<Chair1> a bo:Chair .\n<Chair2> a bo:Chair .\n<Chair3> a bo:Chair .\n<Table1> a bo:Table .\n<Table2> a bo:Table .\n<Table3> a bo:Table .\n",
   "description": "Query displays what Auditorium81 is."
+},
+{
+  "title": "Assignment 13 - task 2.2 - Query 2",
+  "query": "SELECT DISTINCT ?Subject\nWHERE {\n\t?Subject a ?Object\n}",
+  "triples": "@prefix bo:         <http://www.bim.byg.dtu.dk/ontology#> .\n\n\n<DTU>bo:hasBuilding<DTU116>.\n<DTU> a <University>.\n<DTU116> a <Building> .\n<DTU116> bo:hasSpace <Auditorium81> .\n<DTU116> bo:hasSpace <Auditorium82> .\n<Auditorium81> a bo:hasRoom .\n<Auditorium82> a bo:hasRoom .\n<Wood> a <Material> . bo:Chair bo:madeOf <Wood>. bo:Table bo:madeOf <Wood>. bo:Table bo:madeOf <Steel>.<Steel> a <Material>.\n<Lamp> bo:madeOf <Steel>.\n<Auditorium81> bo:containsElement <Chair1> .\n<Auditorium81> bo:containsElement <Chair2> .\n<Auditorium81> bo:containsElement <Chair3> .\n<Auditorium81> bo:containsElement <Table1> .\n<Auditorium81> bo:containsElement <Table2> .\n<Auditorium81> bo:containsElement <Table3> .\n<Auditorium81> bo:containsElement <Blackboard_lamp> .\n<Auditorium81> bo:containsElement <Overlight> .\n\n<Blackboard_lamp> a <Lamp>.\n<Overlight> a <Lamp>.\n\n<Chair1> a bo:Chair .\n<Chair2> a bo:Chair .\n<Chair3> a bo:Chair .\n<Table1> a bo:Table .\n<Table2> a bo:Table .\n<Table3> a bo:Table .\n",
+  "description": "Query displays a list of all types."
 }
     ]
 }
